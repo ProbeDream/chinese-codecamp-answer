@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css">
+		<title>FCC 测试表单</title>
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<h1 id="title" class="text-center">
+					FCC 测试表单
+				</h1>
+				<p id="description" class="description text-center">
+					感谢你抽出时间来填写这份表单,感谢你的建议!
+				</p>
+			</header>
+			<form id="survey-form">
+				<div class="form-group">
+					<label for="name" id="name-label">姓名</label>
+					<input type="text" name="name" id="name" class="form-control" placeholder="确认你的姓名" required>
+				</div>
+				<div class="form-group">
+					<label for="email" id="email-label">邮箱</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="确认你的邮箱" required>
+				</div>
+				<div class="form-group">
+					<label for="number" id="number-label">年龄<span class="clue">(optional)</span></label>
+					<input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="年龄"
+						required>
+				</div>
+				<div class="form-group">
+					<p>您当前的角色/职业?</p>
+					<select name="role" id="dropdown" class="form-control" required>
+						<option disabled selected value>选择你当前的职业/角色</option>
+						<option value="student">学生</option>
+						<option value="job">全职工作</option>
+						<option value="learner">全职学习者</option>
+						<option value="preferNo">不方便告知</option>
+						<option value="other">其他</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<p>你是否会向朋友推荐FCC?</p>
+					<label>
+						<input class="input-radio" type="radio" name="user-recommend" value="definitely " checked>
+						肯定</label>
+					<label>
+						<input class="input-radio" type="radio" name="user-recommend" value="maybe">
+						也许</label>
+					<label>
+						<input class="input-radio" type="radio" name="user-recommend" value="not-sure">
+						不会</label>
+				</div>
+				<div class="form-group">
+					<p>你最喜欢的FCC功能是什么?</p>
+					<select name="mostList" id="most-list" class="form-control" required>
+						<option value selected disabled>选择一项</option>
+						<option value="challenges">挑战</option>
+						<option value="projects">项目</option>
+						<option value="community">社区</option>
+						<option value="openSource">开源</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<p>你希望看到的改进是什么?<span class="clue">(勾选适用的)</span></p>
+					<label><input name="prefer" type="checkbox" class="input-checkbox"
+							value="front-end-projects">前端项目</label>
+					<label><input name="prefer" type="checkbox" class="input-checkbox"
+							value="back-end-projects">后端项目</label>
+					<label><input name="prefer" type="checkbox" class="input-checkbox"
+							value="data-visualization">数据可视化</label>
+					<label><input name="prefer" type="checkbox" class="input-checkbox" value="challenges">挑战</label>
+					<label><input name="prefer" type="checkbox" class="input-checkbox"
+							value="open-source-community">开源社区</label>
+					<label><input name="prefer" type="checkbox" class="input-checkbox" value="vedios">视频</label>
+					<label><input name="prefer" type="checkbox" class="input-checkbox" value="wiki">wiki</label>
+					<label><input name="prefer" type="checkbox" class="input-checkbox"
+							value="additional-courses">特殊课程</label>
+
+				</div>
+				<div class="form-group">
+					<p>任何意见或者建议</p>
+					<textarea name="comment" class="input-textarea" id="comments" placeholder="请在这里输入你的建议/意见..."></textarea>
+				</div>
+				
+				<div class="form-group">
+					<button type="submit" id="submit" class="submit-button">提交</button>
+				</div>
+			</form>
+
+		</div>
+	</body>
+</html>
