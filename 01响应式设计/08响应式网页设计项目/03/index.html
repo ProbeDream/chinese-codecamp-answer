@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Product sign in WebSite</title>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <div id="page-wrapper">
+      <header id="header">
+        <div class="logo">
+          <img
+            id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="original trombones logo"
+          />
+        </div>
+        <nav id="nav-bar">
+          <ul>
+            <li><a href="#features" class="nav-link">功能</a></li>
+            <li><a href="#how-it-works" class="nav-link">如何工作的</a></li>
+            <li><a href="#pricing" class="nav-link">价格</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="hero">
+        <h2>手工制作,自制的杰作</h2>
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <input
+            type="email"
+            name="email"
+            placeholder="请输入你的邮箱号"
+            required
+          />
+          <input type="submit" value="开始" class="button" id="submit" />
+        </form>
+      </section>
+
+      <div class="container">
+        <section id="features">
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+            <div class="desc">
+              <h2>优质材料</h2>
+              <p>
+                我们的长号使用当地采购的最闪亮的黄铜。 这 将增加您购买的寿命
+              </p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+            <div class="desc">
+              <h2>快速购物</h2>
+              <p>
+                我们确保您在制作完成后立即收到您的长号。如果您不满意，我们还提供免费退货
+              </p>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="icon">
+              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+            </div>
+            <div class="desc">
+              <h2>质量保证</h2>
+              <p>
+                对于您进行的每次购买，我们将确保没有损坏或故障，我们将检查和测试您乐器的音高。
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-it-works">
+          <iframe
+            id="video"
+            height="315"
+            frameborder="0"
+            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            allowfullscreen
+          ></iframe>
+        </section>
+
+        <section id="pricing">
+          <div class="product" id="tenor">
+            <div class="level">次中音长号</div>
+            <h2>600美元</h2>
+            <ol>
+              <li>逻辑推理</li>
+              <li>逻辑推理</li>
+              <li>逻辑推理</li>
+              <li>逻辑推理</li>
+            </ol>
+            <button class="button">选择</button>
+          </div>
+          <div class="product" id="bass">
+            <div class="level">低音长号</div>
+            <h2>900美元</h2>
+            <ol>
+              <li>逻辑推理</li>
+              <li>逻辑推理</li>
+              <li>逻辑推理</li>
+              <li>逻辑推理</li>
+            </ol>
+            <button class="button">选择</button>
+          </div>
+          <div class="product" id="value">
+            <div class="level">价值长号</div>
+            <h2>1200美元</h2>
+            <ol>
+              <li>类似于小号的演奏</li>
+              <li>非常适合爵士乐队</li>
+              <li>Lorem ipsum dolor。</li>
+            </ol>
+            <button class="button">选择</button>
+          </div>
+        </section>
+        <footer>
+          <ul>
+            <li>
+              <a href="#">隐私</a>
+            </li>
+            <li>
+              <a href="#">条款</a>
+            </li>
+            <li>
+              <a href="#"> 接触 </a>
+            </li>
+          </ul>
+          <span> 版权@2016,原创长号 </span>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
